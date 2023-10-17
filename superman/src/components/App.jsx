@@ -6,7 +6,7 @@ import Eshop from '../pages/Eshop';
 import Layout from '../pages/Layout';
 import MonCompte from '../pages/MonCompte';
 import NotFoundPage from '../pages/NotFoundPage';
-import Singup from '../pages/Singup';
+import Signup from '../pages/Signup';
 import Login from '../pages/Login';
 
 
@@ -20,7 +20,7 @@ function App() {
             <Route path='Home' element={<Home/>}/>
             <Route path='Eshop' element={<Eshop/>}/>
             <Route path='MonCompte' element={<MonCompte/>}/>
-            <Route path='Singup' element={<Singup/>}/>
+            <Route path='Signup' element={<Signup/>}/>
             <Route path='Login' element={<Login/>}/>
             <Route path='*' element={<NotFoundPage/>}/>
           </Route>
