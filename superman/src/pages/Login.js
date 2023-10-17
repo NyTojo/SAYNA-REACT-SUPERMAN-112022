@@ -23,13 +23,7 @@ function Login() {
 
   return (
     <>
-      <section id="hero">
-        <div className="hero-image">
-          <div className="container">
-            <h1 className="hero-title text-uppercase text-white">Connexion</h1>
-          </div>
-        </div>
-      </section>
+      
       <div className="container formulaire">
         <div className="head text-center">
           <h2>Connexion</h2>
@@ -49,7 +43,7 @@ function Login() {
               <input type="password" onChange={(e) => setPassword(e.target.value)} value={password} className="form-control" id="exampleInputPassword1" />
             </div>
             <div className="text-danger">{error}</div>
-            <button type="submit" className="button">Se connecter</button>
+            <button type="submit" className="buton">Se connecter</button>
           </form>
         </div>
       </div>
