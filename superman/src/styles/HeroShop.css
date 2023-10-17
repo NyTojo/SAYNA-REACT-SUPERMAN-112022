@@ -1,0 +1,93 @@
+:root {
+  --yellow-color: #f1c530;
+  --blue-color: #003bb1;
+  --white-color: #ffffff;
+  --gradient-white: #7c7675;
+  --red-color: #b11313;
+  --black-color: #000000;
+}
+
+
+.myheroImage::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+.myheroImage {
+  position: relative;
+  background-image: url(../assets/images/img20.png);
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card{
+  margin-top: 50px;
+  
+}
+
+.card-img-top{
+  width: 100%;
+}
+
+.col-md-4{
+  text-align: center;
+}
+
+.card{
+  border: #ffffff 0.5px solid;
+  border-radius: 5px;
+}
+
+.titre{
+  padding-top: 50px;
+}
+
+.myhero-title {
+  padding-left: 70px;
+  padding-top: 6em;
+  font-size: 4em;
+  font-weight: bolder;
+  font-family: Adventure;
+}
+
+.btn:hover {
+background: #0055ff;
+}
+
+.btn{
+  margin-top: -20px;
+  height: 60px ;
+  width: 100%;
+  text-decoration: none;
+  color: var(--white-color);
+  font-family: Adventure;
+  font-size: 20px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background: var(--blue-color) ;
+  box-shadow: var(--black-color) 15px 15px 50px;
+}
+
+
+.fleche:hover {
+  color: #ffffff;
+}
+
+.fleche {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.card-body h5, .card-body p{
+  color: var(--white-color);
+}

@@ -1,0 +1,72 @@
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.textfooter {
+  font-size: 13px;
+  text-align: center;
+}
+
+.social-item {
+  padding: 10px;
+}
+
+#citations {
+  margin: 90px;
+  text-align: center;
+}
+
+#citations .citation-carte {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#citations .citation-auteur {
+  padding-top: 30px;
+  font-size: 14px;
+  font-family: 'radjhani';
+  text-align: center;
+}
+
+.guillemet-open {
+  float: left;
+}
+
+.guillemet-close {
+  float: right;
+}
+
+.ltr {
+  color: rgb(0, 195, 255);
+  font-size: 8px;
+  text-align: center;
+}
+
+/* Styles pour le pied de page */
+
+footer {
+  margin-top: 162px;
+}
+
+footer .text-footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+footer .social-footer {
+  text-align: center;
+  margin: 50px 0;
+}
+
+footer .social-item {
+  padding: 15px;
+}
+
+.small-text {
+  font-size: 13px;
+  color: rgb(173, 173, 173);
+  text-align: center; /* Centre le texte */
+}
