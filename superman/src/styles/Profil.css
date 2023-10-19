@@ -1,0 +1,112 @@
+:root {
+    --yellow-color: #f1c530;
+    --blue-color: #003bb1;
+    --white-color: #ffffff;
+    --gradient-white: #7c7675;
+    --red-color: #b11313;
+    --black-color: #000000;
+}
+
+
+.moncompteImage {
+    position: relative;
+    background-image: url(../assets/images/img37.png);
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.moncompteImage h1 {
+    font-family: adventure;
+    font-size: 70px;
+    margin-top: 500px;
+    margin-left: 150px;
+}
+
+.info {
+    display: block;
+}
+
+.deconnection {
+    margin-top: 20px;
+    height: 50px;
+    width: 150px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: Adventure;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(80deg, var(--blue-color), var(--red-color));
+}
+
+/* Style de base pour les liens non actifs */
+.info a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* Style pour les liens actifs (lorsqu'ils sont cliqués) */
+.info a:active {
+    text-decoration: underline;
+}
+
+.valide, .save{
+    margin-top: 20px;
+    margin-left: 100px;
+    height: 50px;
+    width: 150px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: Adventure;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(80deg, var(--blue-color), var(--red-color));
+}
+
+.col-md-9 .row{
+    border-left: #525252 1px solid;
+    padding-left: 30px;
+}
+
+/* Style des cases à cocher */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    border: 1px solid #ffffff;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Style de la case à cocher cochée */
+  input[type="checkbox"]:checked {
+    background-color: #7b03dd; 
+  }
+  
+  /* Style du texte à côté de la case à cocher */
+  label {
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+
+  label + label {
+    margin-left: 20px; /* Ajustez cette valeur selon vos besoins */
+  }
+
+  label input[type="checkbox"] {
+    margin-right: 10px; /* Ajustez cette valeur selon vos besoins */
+  }

@@ -1,12 +1,12 @@
-import React, { Children } from 'react'
+import React from 'react'
 
-function ProductList({}) {
-  
+function ProductList({ Children }) {
+
   return (
     <>
-      
+      {Children}
     </>
-  )
+  );
 }
 
 export default ProductList;

@@ -21,7 +21,7 @@ function Eshop() {
       </div>
       <div className="container">
         <img className="fleche" src={fleche} alt="fleche" />
-        <img src={panier} alt="" />
+        <img src={panier} alt="panier" className='panier' />
         <div className="row">
 
           <div className="col-md-3">
@@ -99,43 +99,56 @@ function Eshop() {
                         <input type="checkbox" value="batman" className='round-checkbox' /> the dark knight rise
                       </label>
                       <label>
+                        <input type="checkbox" value="Autre" className='round-checkbox' /> Superman
+                      </label>
+                      <label>
                         <input type="checkbox" value="Autre" className='round-checkbox' /> Autre comics et anime
                       </label>
                     </div>
                   </div>
-                
 
-                <button className="apply-filters-button">Appliquer les filtres</button>
+                  <div className='favoris'>
+                    <h4>favoris</h4>
+                    <div>
+                      <label>
+                        <input type="checkbox" value="Autre" className='round-checkbox' /> Afficher vos favoris
+                      </label>
+                    </div>
+                  </div>
+
+
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="col-md-9">
-          <ProductList />
-          <div className="row">
-            {data.map((values) => {
-              const { id, title, price, imageUrl } = values;
-              return (
-                <div className="col-md-4" key={id}>
-                  <div className="card mb-4">
-                    <div className="card-body bg-black">
-                      <img src={imageUrl} className="card-img-top" alt="" />
-                      <div className='titre'>
-                        <h5 className="card-title">{title}</h5>
-                        <p>{price}$</p>
+          <div className="col-md-9">
+            <ProductList>
+            </ProductList>
+
+            <div className="row">
+              {data.map((values) => {
+                const { id, title, price, imageUrl } = values;
+                return (
+                  <div className="col-md-4" key={id}>
+                    <div className="card mb-4">
+                      <div className="card-body bg-black">
+                        <img src={imageUrl} className="card-img-top" alt="" />
+                        <div className='titre'>
+                          <h5 className="card-title">{title}</h5>
+                          <p>{price}$</p>
+                        </div>
                       </div>
                     </div>
+                    <a href="#" className="btn btn-primary">
+                      Ajouter au panier
+                    </a>
                   </div>
-                  <a href="#" className="btn btn-primary">
-                    Ajouter au panier
-                  </a>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
-    </div >
+      </div >
     </>
   );
 }
